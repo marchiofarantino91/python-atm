@@ -11,6 +11,8 @@ class Customer:
         return self.pin
     def getCustBalance(self):           
         return self.balance
+    def updatePin(self,pin):
+        self.pin = pin     
     def withdraw(self,nominal):
         self.balance -=nominal
     def deposit(self , nominal):
