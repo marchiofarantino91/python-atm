@@ -18,7 +18,7 @@ while True:
                exit()
      while True:         
           print("selamat datang di aplikasi ATM ..")
-          print("\n1 - Cek Saldo \t 2- Debet \t 3 - Simpan \t 4 - Ganti Pin  |\t 5 - Keluar ")
+          print("\n1 - Cek Saldo \t 2- Debet \t 3 - Simpan \t 4 - Ganti Pin \t 5 - Keluar ")
 
           menu = int( input("\n Silakan pilih menu: "))
 
@@ -63,8 +63,8 @@ while True:
                     else: print("maaf, pin anda salah! ")     
           elif menu ==5:
                print("Resi tercetak otomatis saat anda keluar.  \n . Harap simpan tanda terima ini \n sebagai bukti transaksi anda.  ")
-               print("No. Record: ",randomn.randint(100000,1000000))
-               print("Tanggal: ",datetime.datetime.now )
+               print("No. Record: ",random.randint(100000,1000000))
+               print("Tanggal: ",datetime.datetime.now() )
                print("Saldo akhir: ",atm.getCustBalance())
                print("Terima kasih telah menggunakan ATM ")
                exit()
